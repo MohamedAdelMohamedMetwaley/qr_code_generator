@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #d4d4d4;
+      }
+      form {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 80px 230px 30px 50px 30px;
+        background-color: white;
+
+        height: 450px;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.3);
+      }
+      form > h1 {
+        font-size: 30px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      form > img {
+        margin-inline: auto;
+      }
+      form > label {
+        margin-bottom: 15px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      form > input {
+        margin-bottom: 25px;
+        width: 90%;
+      }
+      form > button {
+        background-color: orangered;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: fit-content;
+      }
+    </style>
+    <title>QR Code Genrator</title>
+  </head>
+  <body>
+    <form action="" id="qr_form">
+      <h1>QR Code Generator</h1>
+      <img src="./placeholder.jpg" id="qr_image" alt="" height="200" />
+      <label for="url">Enter URL</label>
+      <input
+        type="text"
+        id="qr_url"
+        placeholder="https://www.example.com"
+        required
+      />
+      <button type="submit">Generate QR Code</button>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
